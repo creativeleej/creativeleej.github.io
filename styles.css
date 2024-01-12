@@ -34,7 +34,10 @@ html {
     scroll-padding-top: 6rem;
 }
 
-
+.pageWrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
 /*section {
     padding: 5rem 9%;
 }*/
