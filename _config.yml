@@ -1,6 +1,7 @@
 baseurl: '/'
 permalink: pretty
 title: 'Jekyll Serif'
+remote_theme: "jekyll-serif-theme"
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
