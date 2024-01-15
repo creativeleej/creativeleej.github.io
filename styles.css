@@ -167,7 +167,7 @@ img, picture, video, canvas, svg {
 
 
 .home h1 {
-    font-size: 0.25rem;
+    font-size: 5rem;
     font-weight: 300;
     margin-bottom: 2rem;
     /*transform: none;*/
@@ -413,9 +413,9 @@ img, picture, video, canvas, svg {
           padding: 3rem 2rem;
         }
       
-        .home h1 {
+        /*.home h1 {
           font-size: 5rem;
-        }
+        }*/
       }
       
       @media (max-width: 991px) {

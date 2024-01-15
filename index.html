@@ -9,13 +9,13 @@
 
       <!-- font awesome cdn-->
       <script src="https://kit.fontawesome.com/1337db0a3c.js" crossorigin="anonymous"></script>
+      
       <!-- <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script> -->
       
       <!-- Local css File -->
       <link rel="stylesheet" href="styles.css">
   </head>
-
   <body>
     <!-- <div id="pageWrapper"> -->
     <!-- Header Section-->
@@ -76,7 +76,7 @@
                 <p>Skilled at developing content for diverse audiences. I know how to author using document processors, single sourcing, and reuse.</p>
               </div>            
               <div class="skills-img">
-                <img src="images/skills1.jpg" alt="Image of a marble desktop with a pen, laptop, and clipbard. The clipboard has a sheet of paper with the words Camera Manual at the top followed by a list of bullets arranged vertically."/>
+                <img src="images/skills1_a.png" alt="Image of a marble desktop with a pen, laptop, and clipbard. The clipboard has a sheet of paper with the words Camera Manual at the top followed by a list of bullets arranged vertically."/>
               </div>
             </div>
 
@@ -86,7 +86,7 @@
                 <p>Experience creating content to help developers understand and interact with APIs. I know how to use static site generators, REST API, SOAP, curl, API standards Swagger API, and Postman.</p>
               </div>
               <div class="skills-img">
-                <img src="images/skills2.jpg" alt="Image of a computer screen with color-coded Java"/>
+                <img src="images/skills2_a.png" alt="Image of a computer screen with color-coded Java"/>
               </div>          
             </div>
 
@@ -96,7 +96,7 @@
                 <p>Adept at scoping, planning, and managing multiple projects simultaneously as a lead writer. I know how to prioritize and delegate tasks to meet project requirements.</p>
               </div>
               <div class="skills-img">
-                <img src="images/skills3.jpg" alt="Image of a work desk with post-it notes, markers, and a bin of note-taking tools"/>
+                <img src="images/skills3_a.png" alt="Image of a work desk with post-it notes, markers, and a bin of note-taking tools"/>
               </div>
             </div>
 
@@ -106,7 +106,7 @@
                 <p>Strong collaborative skills and ability to work closely with diverse teams. I am flexible and opt for problem-solving and conflict-resolution options that promote teamwork.</p>
               </div>
               <div class="skills-img">
-                <img src="images/skills4.jpg" alt="Image of 5 people seated in a meeting"/>
+                <img src="images/skills4_a.png" alt="Image of 5 people seated in a meeting"/>
               </div>
             </div>
 
@@ -116,7 +116,7 @@
                 <p>Proficiency with a broad range of tools for authoring content, designing graphics, and building online help. I also know API and network protocols, programming and markup languages, and technologies for collaborative version control, software testing, designing APIs, and managing databases.</p>
               </div>
               <div class="skills-img">
-                <img src="images/skills5.png" alt="Image of various business and technology-ralated words positioned horizontally and vertically"/>
+                <img src="images/skills5_a.png" alt="Image of various business and technology-ralated words positioned horizontally and vertically"/>
               </div>          
             </div>
 
@@ -126,13 +126,10 @@
                 <p>Mastery of skillfully translating complex concepts into clear and compelling visuals standalone or within a document. I have extensive experience creating diagrams, illustrations, and charts.</p>
               </div>
               <div class="skills-img">
-                <img src="images/skills6.jpg" alt="Image of a small desktop monitor with large icons for six design applications and a large monitor with an abstract design"/>
+                <img src="images/skills6_a.png" alt="Image of a small desktop monitor with large icons for six design applications and a large monitor with an abstract design"/>
               </div>          
             </div>
-         
-
-
-        </div>
+          </div>
       <!--</div>-->
     </section>
 
@@ -146,21 +143,29 @@
       <section class="contact" id="contact">
         <h1 class="heading">Contact Me</h1>
         <div class="contact-container">
-          <form>
-            <div class="inputBox">
-              <input type="text" placeholder="your name"/>
-              <input type="text" placeholder="your email address"/>
+                  
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="inputBox">
+              <input type="hidden" name="access_key" value="17b69b89-a50f-460d-9e79-0e9cdbd73a05">
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;" required>
+              <input type="text" name="name" placeholder="your name" required/>
+              <input type="text" name="email" placeholder="your email address" required/>
             </div>
-            <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+            <div>
+            <textarea name="message" placeholder="your message" id="" cols="30" rows="10"></textarea>           
+          </div>
+            <div class="h-captcha" data-captcha="true"></div>
             <div class="inputBox">
               <input type="submit" value="send message" class="btn"/>
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
             </div>
           </form>
         </div>
       </section>
+    </form>
 
-    
-      <!-- Footer Section-->
+   
+    <!-- Footer Section-->
 
       <section class="footer">
         <a href="#" class="logo">Haletha<span>Judkins</span></a>
@@ -183,6 +188,9 @@
       
       <!-- Local js File -->
       <script src="script.js"></script>
+
+      <!-- Web3Forms js file -->
+      <script src="https://web3forms.com/client/script.js" async defer></script>
     <!--</div>-->
   </body>
 
