@@ -62,12 +62,12 @@ section {
 }
 
 
-/**, *::before, *::after {
+*::before, *::after {
     box-sizing: border-box;
-  }*/
+  }
 
   .btn:hover {
-    background: black;
+    background: turquoise;
     color: var(--white);
 }
 
@@ -118,7 +118,7 @@ img, picture, video, canvas, svg {
 }
 
 .header .navbar a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--white);
     margin-left: 0.5rem;
 }
@@ -229,7 +229,7 @@ img, picture, video, canvas, svg {
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
     background: var(--white);
     border-radius: 10px;
@@ -257,7 +257,7 @@ img, picture, video, canvas, svg {
 .skills-img img {
     display: block;
     width: 100%;
-    height: 160px;
+    height: 125px;
     transition: 0.3s;
 }  
 
@@ -325,7 +325,7 @@ img, picture, video, canvas, svg {
 }
 
 .contact-container form .btn:hover {
-    background: var(--black);
+  background: turquoise;
     color: var(--white);
 }
 
@@ -400,7 +400,7 @@ img, picture, video, canvas, svg {
         font-size: 5rem;
     }*/
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1200px), (min-width: 600px){
         .header {
           padding: 2rem;
         }
@@ -409,9 +409,9 @@ img, picture, video, canvas, svg {
           padding: 2rem;
         }
       
-        section {
+        /*section {
           padding: 3rem 2rem;
-        }
+        }*/
       
         /*.home h1 {
           font-size: 5rem;
@@ -452,10 +452,10 @@ img, picture, video, canvas, svg {
           margin: 2rem 0;
         }
       
-        .contact .box-container form .inputBox input {
+        /*.contact .box-container form .inputBox input {
           width: 100%;
           margin-bottom: 1rem;
-        }
+        }*/
       }
       
       @media (max-width: 450px) {
