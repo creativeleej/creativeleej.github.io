@@ -441,12 +441,12 @@ and (-webkit-min-device-pixel-ration:1){
         .header.active {
           padding: 2rem;
         }
-    }
-        /*section {
+    
+        section {
           padding: 3rem 2rem;
-        }*/
+        }
       
-        /*.home h1 {
+        .home h1 {
           font-size: 5rem;
         }
       }
@@ -484,12 +484,12 @@ and (-webkit-min-device-pixel-ration:1){
           font-size: 2rem;
           margin: 2rem 0;
         }
-      
+      }
         /*.contact .box-container form .inputBox input {
           width: 100%;
           margin-bottom: 1rem;
-        }
-      }
+        }*/
+      
       
       @media (max-width: 450px) {
         html {
