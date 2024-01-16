@@ -485,10 +485,10 @@ and (-webkit-min-device-pixel-ration:1){
           margin: 2rem 0;
         }
       }
-        /*.contact .box-container form .inputBox input {
+        .contact .box-container form .inputBox input {
           width: 100%;
           margin-bottom: 1rem;
-        }*/
+        }
       
       
       @media (max-width: 450px) {
