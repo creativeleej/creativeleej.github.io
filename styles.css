@@ -383,6 +383,39 @@ img, picture, video, canvas, svg {
 }
 
 /* Media Queries */
+
+/* Laptops */
+@media screen 
+and (min-width:1200px) 
+and (max-width:1600px)
+and (-webkit-min-device-pixel-ration:1){
+
+}
+/* Laptops with Retina Screens*/
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+  }
+
+  /* Tablet*/
+@media screen 
+and (min-width:769px) 
+and (max-width:1025px) 
+and (-webkit-min-device-pixel-ration:1){
+  
+}
+
+/* Phones */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
 /*@media 
 (max-width: 1200px) and (min-width: 600px), (min-width: 1100px) {
     .header {
@@ -400,7 +433,7 @@ img, picture, video, canvas, svg {
         font-size: 5rem;
     }*/
 
-    @media (max-width: 1200px), (min-width: 600px){
+    /*@media (max-width: 1200px), (min-width: 600px){
         .header {
           padding: 2rem;
         }
@@ -415,7 +448,7 @@ img, picture, video, canvas, svg {
       
         /*.home h1 {
           font-size: 5rem;
-        }*/
+        }
       }
       
       @media (max-width: 991px) {
@@ -455,12 +488,12 @@ img, picture, video, canvas, svg {
         /*.contact .box-container form .inputBox input {
           width: 100%;
           margin-bottom: 1rem;
-        }*/
+        }
       }
       
       @media (max-width: 450px) {
         html {
           font-size: 55%;
         }
-      }
+      }*/
       
