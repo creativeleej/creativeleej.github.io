@@ -385,38 +385,38 @@ img, picture, video, canvas, svg {
 /* Media Queries */
 
 /* Laptops */
-@media screen 
+/*@media screen 
 and (min-width:1200px) 
 and (max-width:1600px)
 and (-webkit-min-device-pixel-ration:1){
 
 }
 /* Laptops with Retina Screens*/
-@media screen 
+/*@media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
 
-  }
+  }/*
 
   /* Tablet*/
-@media screen 
+/*@media screen 
 and (min-width:769px) 
 and (max-width:1025px) 
 and (-webkit-min-device-pixel-ration:1){
   
-}
+}*/
 
 /* Phones */
-@media only screen 
+/*@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-}
+}/*
 
-/*@media 
+@media 
 (max-width: 1200px) and (min-width: 600px), (min-width: 1100px) {
     .header {
         padding: 2rem;
@@ -433,7 +433,7 @@ and (-webkit-min-device-pixel-ration:1){
         font-size: 5rem;
     }*/
 
-    /*@media (max-width: 1200px), (min-width: 600px){
+    @media (max-width: 1200px), (min-width: 600px){
         .header {
           padding: 2rem;
         }
@@ -441,7 +441,7 @@ and (-webkit-min-device-pixel-ration:1){
         .header.active {
           padding: 2rem;
         }
-      
+    }
         /*section {
           padding: 3rem 2rem;
         }*/
@@ -495,5 +495,6 @@ and (-webkit-min-device-pixel-ration:1){
         html {
           font-size: 55%;
         }
-      }*/
+      }
+    
       
