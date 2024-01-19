@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
 
-  /* box-sizing: border-box; */
+ box-sizing: border-box;
 
   outline: none;
   border: none;
@@ -33,7 +33,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 4rem;
 }
 
 /* html::-webkit-scrollbar {
@@ -76,7 +76,7 @@ section {
 .heading {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 
@@ -156,7 +156,8 @@ img, picture, video, canvas, svg {
 
 /* Home Section */
 .home {
-  min-height: 100vh;  
+  height: 100vh;
+
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('/images/hero-image.png') no-repeat;
@@ -220,7 +221,7 @@ img, picture, video, canvas, svg {
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
+  gap: 5rem;
 
   /* position: relative;    
     height: 500px;
@@ -237,11 +238,11 @@ img, picture, video, canvas, svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.18)0px 2px 4px;
   background: var(--white);
-  border-radius: 10px;
+  border-radius: 20px;
   transition: all 0.3s ease;
 }
 
@@ -350,7 +351,7 @@ img, picture, video, canvas, svg {
 .footer {
   background: var(--white);
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .footer .logo {
@@ -445,6 +446,13 @@ and (-webkit-min-device-pixel-ration:1){
         font-size: 5rem;
     } */
 
+@media (max-width: 1920px) {
+
+  section {
+    padding: 6rem 2rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 2rem;
@@ -454,7 +462,7 @@ and (-webkit-min-device-pixel-ration:1){
     padding: 2rem;
   }
 
-  section {
+  .section {
     padding: 3rem 2rem;
   }
 
@@ -506,7 +514,7 @@ and (-webkit-min-device-pixel-ration:1){
 
 .contact .box-container form .inputBox input {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 
