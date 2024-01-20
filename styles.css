@@ -64,9 +64,9 @@ section {
 }
 
 
-/** ::before, *::after {
+* ::before, *::after {
     box-sizing: border-box;
-  } */
+  } 
 
 .btn:hover {
   background: turquoise;
@@ -160,7 +160,7 @@ img, picture, video, canvas, svg {
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('/images/hero-image.png') no-repeat;
+    url('/images/hero-image_2.png') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -459,11 +459,11 @@ and (-webkit-min-device-pixel-ration:1){
   }
 
   .header.active {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .section {
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .home h1 {
@@ -471,11 +471,25 @@ and (-webkit-min-device-pixel-ration:1){
   }
 }
 
-/*@media (max-width: 1024px) {
-  .home {
-    min-height: 100vh;
-  }
-}*/
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
+.home {
+   height: 100vh;
+}
+
+.header {
+  padding: 3rem;
+}
+
+section {
+  padding: 7rem 2rem;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+}
 
 @media (max-width: 991px) {
   html {
@@ -510,16 +524,29 @@ and (-webkit-min-device-pixel-ration:1){
     font-size: 2rem;
     margin: 2rem 0;
   }
+
+
+section {
+  padding: 35rem 5rem;
 }
 
-.contact .box-container form .inputBox input {
-  width: 100%;
-  margin-bottom: 0.5rem;
+
+@media only screen and (max-width: 450px) and (orientation: portrait){
+ 
+  .home {
+  background: size 1200px;;
 }
 
+.home {
+  height: 100vh;
+}
+ .home h1 {
+  font-size: 3rem;
+ }
 
-@media (max-width: 450px) {
   html {
     font-size: 55%;
   }
+  
+}
 }
