@@ -452,8 +452,22 @@ and (-webkit-min-device-pixel-ration:1){
     padding: 6rem 2rem;
   }
 }
+/* Small devices (phones) 
+@media only screen and (max-width: 600px) {
+  
+}*/
 
-@media (max-width: 1200px) {
+/* Medium devices (tablets) 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+ 
+}*/
+
+/* Large devices (desktops) 
+@media only screen and (min-width: 1025px) {
+  
+}*/
+
+/*@media (max-width: 1200px) {
   .header {
     padding: 2rem;
   }
@@ -495,7 +509,7 @@ section {
   html {
     font-size: 60%;
   }
-}
+}*/
 
 @media (max-width: 768px) {
   .header .menu {
@@ -507,7 +521,7 @@ section {
     top: 6.4rem;
     left: 0;
     right: 0;
-    background: var(--white);
+    background: var(--black);
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -519,22 +533,29 @@ section {
   }
 
   .header .navbar a {
-    color: var(--black);
+    color: var(--white);
     margin: 0;
     font-size: 2rem;
     margin: 2rem 0;
   }
 
+  .home {
+    height: 100vh;
+  }
+   .home h1 {
+    font-size: 2rem;
+   }
 
+  
 section {
-  padding: 35rem 5rem;
+  padding: 5rem 5rem;
+}
 }
 
-
-@media only screen and (max-width: 450px) and (orientation: portrait){
+@media only screen and (max-width: 360px) {
  
   .home {
-  background: size 1200px;;
+  background: size 1200px;
 }
 
 .home {
@@ -547,6 +568,4 @@ section {
   html {
     font-size: 55%;
   }
-  
-}
 }
