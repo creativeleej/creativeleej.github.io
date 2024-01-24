@@ -19,14 +19,14 @@ Check out the live version of my portfolio: [https://www.haletha.com](https://ww
 
 ## 📁 Project Structure
 
-- `/root`: Contains the source code for the React application.
+- `/root`: Contains the source code for my website.
 - `/images`: Includes my website images.
 
 ## 🚀 Features
 
 - **Responsive Design:** Ensures a seamless experience across various devices and screen sizes (a work in progress).
 - **Skills Section:** Provides an overview of my technical skills and expertise.
-- **Portfolio:** Highlights samples of projects I've worked on, including descriptions and 
+- **Portfolio:** Highlights samples of projects I've worked on, including descriptions and interesting notes.
 - **Contact Form:** Allows visitors to reach out to me directly.
 
 ## 🤝 Contributing
