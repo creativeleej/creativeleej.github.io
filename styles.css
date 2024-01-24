@@ -58,7 +58,7 @@ section {
   font-weight: 400;
   font-size: 1.7rem;
   border: 0.1rem solid var(--white);
-  border-radius: 10rem;
+  border-radius: 5rem;
   padding: 1.5rem 4rem;
 
 }
@@ -76,7 +76,7 @@ section {
 .heading {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -161,7 +161,7 @@ img, picture, video, canvas, svg {
   position: relative;
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('/images/hero-image_4.png') no-repeat;
+    url('/images/hero-image_5.png') no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
