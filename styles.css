@@ -125,7 +125,7 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment:scroll;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,18 +134,18 @@ section {
 }
 
 .home h1 {
-  font-size: 2rem;
+  font-size: 7rem;
   font-weight: 100;
-  /*word-wrap: break-word;
-  white-space: normal;*/
-  margin-bottom: 2rem;  
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 3rem;  
   color: var(--white);
 }
 
 .home p {
   font-size: 1.7rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-transform: none;
   color: var(--black);
 }
@@ -345,6 +345,10 @@ section {
 
 @media (max-width: 1920px) and (-webkit-min-device-pixel-ration:1) {
 
+  .home h1 {
+    font-size: 4rem;
+  }
+
   section {
     padding: 6rem 2rem;
   }
@@ -428,6 +432,6 @@ section {
 
 
   section {
-    padding: 5rem;
+    padding: 5rem 5em;
   }
 }
