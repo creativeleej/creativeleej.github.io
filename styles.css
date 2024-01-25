@@ -33,7 +33,7 @@ html {
 }
 
 section {
-  padding: 5rem 9%;
+  padding: 3rem 9%;
 }
 
 .btn {
@@ -59,7 +59,7 @@ section {
 .heading {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -69,7 +69,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  padding: 5rem 9%;
+  padding: 4rem 9%;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -372,22 +372,6 @@ section {
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   .home {
     height: 100vh;
-  }
-
-  html {
-    font-size: 55.5%;
-  }
-
-  .header {
-    padding: 5rem;
-  }
-
-  section {
-    padding: 11rem 1rem;
-  }
-
-  .skills-container {
-    gap: 3rem;
   }
 }
 
