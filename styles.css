@@ -26,7 +26,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 58.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
@@ -134,12 +134,11 @@ section {
 }
 
 .home h1 {
-  font-size: 1rem;
+  font-size: 3rem;
   font-weight: 100;
   word-wrap: break-word;
   white-space: normal;
-  margin-bottom: 2rem;
-  /*transform: none;*/
+  margin-bottom: 2rem;  
   color: var(--white);
 }
 
@@ -374,20 +373,16 @@ section {
     height: 100vh;
   }
 
-  html {
-    font-size: 55.5%;
-  }
-
   .header {
     padding: 5rem;
   }
 
   section {
-    padding: 8rem 1rem;
+    padding: 5rem 1rem;
   }
 
   .skills-container {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
