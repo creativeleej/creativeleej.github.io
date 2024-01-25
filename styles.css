@@ -46,10 +46,10 @@ section {
 
 }
 
-* ::before,
+/** ::before,
 *::after {
   box-sizing: border-box;
-}
+}*/
 
 .btn:hover {
   background: turquoise;
@@ -120,7 +120,7 @@ section {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('/images/hero-image_5.png') no-repeat;
-  background-size: cover;
+  background-size: contain;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
