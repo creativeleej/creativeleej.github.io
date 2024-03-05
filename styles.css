@@ -82,7 +82,7 @@ section {
 }
 
 .header .navbar a {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--white);
   margin-left: 0.5rem;
 }
@@ -90,7 +90,7 @@ section {
 .header .menu {
   /* font-size: 1.2rem; */
 
-  font-size: 1.2rem;
+  font-size: 0.5rem;
   color: var(--white);
   display: none;
 }
