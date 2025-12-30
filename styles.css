@@ -123,8 +123,8 @@ section {
   background-position: center;
   background-attachment:scroll;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
   flex-flow: column;
   text-align: center;
   padding-bottom: 3rem;
