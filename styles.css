@@ -123,22 +123,23 @@ section {
   background-position: center;
   background-attachment:scroll;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   flex-flow: column;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .home h2
 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   word-wrap: break-word;
   padding: 2rem;
   white-space: normal;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-top: 0rem;  
-  /*position: relative;*/
+  position: relative;
   color: var(--white);
 }
 
