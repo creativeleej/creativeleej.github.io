@@ -43,7 +43,7 @@ section {
   border: 0.1rem solid var(--white);
   border-radius: 5rem;
   padding: 1.5rem 4rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 
 }
 
@@ -137,8 +137,8 @@ section {
   padding: 2.5rem;
   white-space: normal;
   margin-bottom: 0px;
-  margin-top: 3rem;  
-  position: relative;
+  margin-top: 5rem;  
+  /*position: relative;*/
   color: var(--white);
 }
 
