@@ -131,13 +131,13 @@ section {
 
 .home h2
 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   word-wrap: break-word;
-  padding: 2.5rem;
+  padding: 2rem;
   white-space: normal;
   margin-bottom: 0px;
-  margin-top: 5rem;  
+  margin-top: 0rem;  
   /*position: relative;*/
   color: var(--white);
 }
