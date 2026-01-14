@@ -184,8 +184,8 @@
     <!-- Footer Section-->
 
     <section class="footer">
-      <a href="#" class="logo">Haletha<span>Judkins</span></a>
-      <p>&copy;2024 Haletha Judkins | <a href="https://wordsandtechblog.wordpress.com/">Blog</a> | <a href="privacy_policy.html">Privacy Policy</a></p>
+      <a href="#" class="logo">Haletha<span>Judkins</span></a>      
+      <p>&copy;<span id="year"></span> Haletha Judkins | <a href="https://wordsandtechblog.wordpress.com/">Blog</a> | <a href="privacy_policy.html">Privacy Policy</a></p>
       <div class="socials">
         <a href="https://twitter.com/halethajudkins">
           <ion-icon name="logo-twitter"></ion-icon>
@@ -210,6 +210,11 @@
 
     <!-- Web3Forms js file -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
 
   </body>
 
