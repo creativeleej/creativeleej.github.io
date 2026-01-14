@@ -114,7 +114,8 @@ section {
   width: 100%;
   position: relative;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),*/
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url('/images/hero-image_5.png') no-repeat;
   background-size: contain;
   -webkit-background-size: cover;
