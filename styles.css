@@ -114,13 +114,14 @@ section {
   width: 100%;
   position: relative;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),*/
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url('/images/hero-image_5.png') no-repeat;
   background-size: contain;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center;
+  background-position: center 45%;
   background-attachment:scroll;
   display: flex;
   align-items: center;
@@ -423,5 +424,301 @@ section {
 
   section {
     padding: 5rem 5em;
+  }
+}
+
+/* =====================================================
+   BLOG STYLES
+   Add these to the bottom of your existing styles.css
+   Matches your Montserrat font, teal accent, and rem scale
+===================================================== */
+
+/* ── Blog Index Page ─────────────────────────────── */
+
+.blog-index {
+  max-width: 80rem;
+  margin: 8rem auto 0;
+  padding: 4rem 9%;
+}
+
+.blog-index h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.blog-intro {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #e0e0e0;
+}
+
+.blog-intro a {
+  color: rgb(46, 151, 169);
+  font-size: 1.2rem;
+}
+
+.blog-intro a:hover {
+  text-decoration: underline;
+}
+
+/* Individual post preview card on blog index */
+.post-preview {
+  padding: 2.5rem 0;
+  border-bottom: 0.1rem solid #f0f0f0;
+}
+
+.post-preview:last-child {
+  border-bottom: none;
+}
+
+.post-date {
+  font-size: 1.2rem;
+  color: var(--light-color);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.post-preview h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.8rem;
+}
+
+.post-preview h2 a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+  color: rgb(46, 151, 169);
+}
+
+.post-preview p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.read-more {
+  font-size: 1.3rem;
+  color: rgb(46, 151, 169);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 0.1rem solid rgb(46, 151, 169);
+  padding-bottom: 0.1rem;
+}
+
+.read-more:hover {
+  color: var(--black);
+  border-bottom-color: var(--black);
+}
+
+/* ── Individual Blog Post Page ───────────────────── */
+
+.blog-post {
+  max-width: 74rem;
+  margin: 10rem auto 0;
+  padding: 4rem 9% 8rem;
+  line-height: 1.8;
+  color: var(--black);
+}
+
+.post-meta {
+  font-size: 1.3rem;
+  color: var(--light-color);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+.blog-post h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+.blog-post hr {
+  border: none;
+  border-top: 0.1rem solid #e5e5e5;
+  margin: 2rem 0 3rem;
+}
+
+.blog-post h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--black);
+  margin: 3rem 0 1rem;
+}
+
+.blog-post h3 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--black);
+  margin: 2rem 0 0.8rem;
+}
+
+.blog-post p {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.9;
+  margin-bottom: 1.6rem;
+}
+
+.blog-post ul,
+.blog-post ol {
+  padding-left: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.blog-post li {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 0.5rem;
+}
+
+/* Inline code */
+.blog-post code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 1.3rem;
+  background: var(--light-bg);
+  border: 0.1rem solid #e0e0e0;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  color: rgb(46, 151, 169);
+}
+
+/* Code blocks */
+.blog-post pre {
+  background: var(--black);
+  color: #d4d0c8;
+  border-radius: 0.8rem;
+  padding: 2rem 2.4rem;
+  overflow-x: auto;
+  margin-bottom: 1.8rem;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+.blog-post pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* Blockquotes */
+.blog-post blockquote {
+  border-left: 0.4rem solid rgb(46, 151, 169);
+  margin: 0 0 1.6rem;
+  padding: 0.5rem 0 0.5rem 2rem;
+  color: var(--light-color);
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* Horizontal rules inside posts */
+.blog-post .post-divider {
+  border: none;
+  border-top: 0.1rem solid #e5e5e5;
+  margin: 3rem 0;
+}
+
+/* ── Post Navigation (prev/next) ─────────────────── */
+
+.post-nav {
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 3rem 9% 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 0.1rem solid #e5e5e5;
+  gap: 2rem;
+}
+
+.post-nav a {
+  font-size: 1.4rem;
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.post-nav a:hover {
+  color: rgb(46, 151, 169);
+}
+
+.nav-label {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--light-color);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.post-nav .prev { text-align: left; }
+.post-nav .next { text-align: right; }
+
+/* ── Callout shortcode ───────────────────────────── */
+
+.callout {
+  background: #fdf6e3;
+  border-left: 0.4rem solid rgb(46, 151, 169);
+  border-radius: 0 0.6rem 0.6rem 0;
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .blog-index {
+    padding: 3rem 5%;
+    margin-top: 7rem;
+  }
+
+  .blog-index h1 {
+    font-size: 2.4rem;
+  }
+
+  .post-preview h2 {
+    font-size: 1.7rem;
+  }
+
+  .blog-post {
+    padding: 3rem 5% 6rem;
+    margin-top: 8rem;
+  }
+
+  .blog-post h1 {
+    font-size: 2.2rem;
+  }
+
+  .blog-post p,
+  .blog-post li {
+    font-size: 1.4rem;
+  }
+
+  .post-nav {
+    flex-direction: column;
+    padding: 2rem 5% 4rem;
+  }
+
+  .post-nav .next {
+    text-align: left;
   }
 }

@@ -1,0 +1,18 @@
+{
+  "name": "haletha-com",
+  "version": "1.0.0",
+  "description": "haletha.com — Haletha Judkins technical writing portfolio",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.0",
+    "markdown-it": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

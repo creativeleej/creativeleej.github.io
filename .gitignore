@@ -1,0 +1,21 @@
+# Eleventy build output — never commit this
+_site/
+
+# Node dependencies — never commit this
+node_modules/
+
+# npm lock file variants
+package-lock.json
+
+# macOS system files
+.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local

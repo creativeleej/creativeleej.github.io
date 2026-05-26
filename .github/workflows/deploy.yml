@@ -1,0 +1,72 @@
+# .github/workflows/deploy.yml
+#
+# FILE LOCATION: Create this file at exactly this path in your repo:
+#   .github/workflows/deploy.yml
+#
+# HOW IT WORKS:
+#   Every time you push a commit to the main branch, GitHub automatically:
+#   1. Installs Node.js and your npm dependencies
+#   2. Runs "npm run build" to generate the _site/ folder
+#   3. Pushes the contents of _site/ to a branch called gh-pages
+#   4. GitHub Pages serves your site from the gh-pages branch
+#
+# BEFORE THIS WORKS, do this once in your GitHub repo settings:
+#   Repository → Settings → Pages → Source → gh-pages branch → Save
+#
+# BRANCH NAME: If your main branch is called "master" instead of "main",
+#   change both occurrences of "main" below to "master".
+
+name: Build and Deploy Eleventy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main      # ← change to "master" if that's your branch name
+  workflow_dispatch:  # allows manual trigger from GitHub Actions tab
+
+# Cancel any in-progress deployment if a new push comes in
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # Step 1: Check out your repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js (Eleventy requires Node 18+)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'       # caches node_modules for faster builds
+
+      # Step 3: Install dependencies from package-lock.json
+      # "npm ci" is safer than "npm install" for CI environments
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Build the Eleventy site
+      # This runs the "build" script from your package.json
+      # Output goes to the _site/ folder
+      - name: Build Eleventy site
+        run: npm run build
+
+      # Step 5: Deploy _site/ to the gh-pages branch
+      # peaceiris/actions-gh-pages handles this cleanly and reliably
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          # Adds a .nojekyll file so GitHub doesn't try to run Jekyll
+          # on your already-built Eleventy output
+          enable_jekyll: false
+          # Commit message shown in the gh-pages branch history
+          commit_message: "Deploy: ${{ github.event.head_commit.message }}"

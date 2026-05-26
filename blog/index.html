@@ -1,0 +1,42 @@
+---
+layout: base
+title: Blog
+description: "Technical writing insights, API documentation deep dives, and practical advice for writers working at the intersection of language and technology."
+permalink: /blog/
+---
+
+<div class="blog-index">
+
+  <h1>The Words &amp; Tech Blog</h1>
+  <p class="blog-intro">
+    Technical writing insights, API documentation deep dives, and practical advice
+    for writers working at the intersection of language and technology.
+    &nbsp;·&nbsp;
+    <a href="/feed.xml" style="color:inherit;font-size:12px;">RSS Feed</a>
+  </p>
+
+  {%- for post in collections.posts %}
+  <article class="post-preview">
+
+    <p class="post-date">
+      <time datetime="{{ post.date | htmlDateString }}">
+        {{ post.date | readableDate }}
+      </time>
+    </p>
+
+    <h2>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
+
+    <p>{{ post.data.excerpt }}</p>
+
+    <a href="{{ post.url }}" class="read-more">Read more →</a>
+
+  </article>
+  {%- endfor %}
+
+  {%- if collections.posts.length == 0 %}
+  <p style="color:#888;font-style:italic;">No posts yet — check back soon.</p>
+  {%- endif %}
+
+</div>
