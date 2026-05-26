@@ -117,7 +117,7 @@ section {
     /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),*/
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url('/images/hero-image_5.png') no-repeat;
-  background-size: contain;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -381,7 +381,7 @@ section {
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   .home {
-    height: 250px;
+    height: 400px;
     background-size: cover;
   }
 }
@@ -415,7 +415,8 @@ section {
   }
 
   .home {
-    height: 100vh;
+    height: 280px;
+    background-size: cover;
   }
 
   .home h1 {
