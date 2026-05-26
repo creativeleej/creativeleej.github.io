@@ -4,9 +4,6 @@ _site/
 # Node dependencies — never commit this
 node_modules/
 
-# npm lock file variants
-package-lock.json
-
 # macOS system files
 .DS_Store
 

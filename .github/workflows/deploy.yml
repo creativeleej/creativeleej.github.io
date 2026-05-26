@@ -49,7 +49,7 @@ jobs:
       # Step 3: Install dependencies from package-lock.json
       # "npm ci" is safer than "npm install" for CI environments
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # Step 4: Build the Eleventy site
       # This runs the "build" script from your package.json
