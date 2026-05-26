@@ -135,6 +135,10 @@ module.exports = function(eleventyConfig) {
   // DIRECTORY CONFIGURATION
   // ─────────────────────────────────────────────────────────
 
+  // Ignore files that aren't templates
+  eleventyConfig.ignores.add("README.md");
+  eleventyConfig.ignores.add("SETUP_README.md");
+
   return {
     // Template languages
     templateFormats: ["md", "html", "njk"],
