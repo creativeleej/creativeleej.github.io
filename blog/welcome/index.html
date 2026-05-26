@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Haletha Judkins introduces the Words &amp; Tech Blog — a space for technical writers, developer advocates, and anyone working at the intersection of language and technology.">
+  <title>Welcome to the Words &amp; Tech Blog — Haletha Judkins' Portfolio Website</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G544T50X3C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G544T50X3C');
+  </script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1337db0a3c.js" crossorigin="anonymous"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <!-- Header Section-->
+  <header class="header">
+    <a href="/" class="logo">Haletha<span>Judkins</span></a>
+    <a class="menu fas fa-bars"></a>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#skills">Skills</a>
+      <a href="/#portfolio">Portfolio</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page content injected here by Eleventy -->
+  <main>
+    
+<!-- Individual blog post layout -->
+<!-- This wraps inside base.html (which provides nav + footer) -->
+
+<article class="blog-post">
+
+  <p class="post-meta">
+    <time datetime="2026-04-21">
+      April 21, 2026
+    </time>
+    &nbsp;·&nbsp;
+    Haletha Judkins
+  </p>
+
+  <h1>Welcome to the Words &amp; Tech Blog</h1>
+  <hr />
+
+  <!-- Post body — your Markdown is rendered here -->
+  <p>Hello, and welcome. My name is Haletha — a technical writer who has been translating complex technology into clear, useful content since the mid-1990s.</p>
+<p>After years of maintaining my Words &amp; Tech blog at Wordpress, I’m moving it here to <a href="http://haletha.com">haletha.com</a>, where it belongs. Everything in one place, under one roof.</p>
+<h2>What this blog is about</h2>
+<p>I write about technical writing craft, API documentation, working with engineers, and the practical realities of doing this work at a high level. Lately that means a lot of writing about AI — not in a hype-driven way, but in a “here’s what actually works and what doesn’t” way.</p>
+<p>My background spans end-user documentation, developer documentation, API reference docs, content strategy, and more recently, automation and AI-assisted workflows. I’ve worked across industries, managed complex documentation projects simultaneously, and spent a career learning to speak to both developer and non-technical audiences without losing either one.</p>
+<p>If you work at the intersection of language and technology — as a technical writer, developer advocate, content strategist, or engineer who ends up writing your own docs — there will be something here for you.</p>
+<h2>Already published</h2>
+<p>If you’re new here, start with these:</p>
+<ul>
+<li><a href="/blog/why-ai-apis-are-hardest-to-document/">Why AI APIs Are the Hardest Things to Document</a></li>
+<li><a href="/blog/what-is-docs-as-code/">What Is Docs-as-Code — And Does Your Team Actually Need It?</a></li>
+<li><a href="/blog/survival-guide-working-with-engineers/">The Technical Writer’s Survival Guide to Working with Engineers</a></li>
+</ul>
+<p>More on the way. Thanks for being here.</p>
+
+
+</article>
+
+
+<!-- Previous / Next post navigation -->
+
+
+
+
+<nav class="post-nav" aria-label="Post navigation">
+
+  <div class="prev">
+    
+      <span class="nav-label">← Previous</span>
+      <a href="/blog/why-ai-apis-are-hardest-to-document/">Why AI APIs Are the Hardest Things to Document (And What to Do About It)</a>
+    
+  </div>
+
+  <div class="next">
+    
+  </div>
+
+</nav>
+
+
+  </main>
+
+  <!-- Footer Section-->
+  <section class="footer">
+    <a href="/" class="logo">Haletha<span>Judkins</span></a>
+    <p>&copy;<span id="year"></span> Haletha Judkins | <a href="/blog/">Blog</a> | <a href="/privacy_policy.html">Privacy Policy</a></p>
+    <div class="socials">
+      <a href="https://twitter.com/halethajudkins">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/halethajudkins">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <a href="https://github.com/creativeleej">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+    </div>
+  </section>
+
+  <!-- cdnjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- ionicons cdn -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <!-- Local js File -->
+  <script src="/script.js"></script>
+
+  <!-- Web3Forms js file -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <!-- Year in footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

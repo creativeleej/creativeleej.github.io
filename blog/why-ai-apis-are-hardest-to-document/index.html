@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Why documenting AI APIs is uniquely challenging — non-deterministic outputs, complex parameter interactions, probabilistic errors, and dual audiences — and what good AI API documentation actually looks like.">
+  <title>Why AI APIs Are the Hardest Things to Document (And What to Do About It) — Haletha Judkins' Portfolio Website</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G544T50X3C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G544T50X3C');
+  </script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1337db0a3c.js" crossorigin="anonymous"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+
+  <!-- Header Section-->
+  <header class="header">
+    <a href="/" class="logo">Haletha<span>Judkins</span></a>
+    <a class="menu fas fa-bars"></a>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="/#about">About</a>
+      <a href="/#skills">Skills</a>
+      <a href="/#portfolio">Portfolio</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page content injected here by Eleventy -->
+  <main>
+    
+<!-- Individual blog post layout -->
+<!-- This wraps inside base.html (which provides nav + footer) -->
+
+<article class="blog-post">
+
+  <p class="post-meta">
+    <time datetime="2026-04-28">
+      April 28, 2026
+    </time>
+    &nbsp;·&nbsp;
+    Haletha Judkins
+  </p>
+
+  <h1>Why AI APIs Are the Hardest Things to Document (And What to Do About It)</h1>
+  <hr />
+
+  <!-- Post body — your Markdown is rendered here -->
+  <p>AI APIs present a fundamentally different documentation challenge than traditional REST APIs — and most existing doc frameworks weren’t designed to handle them. They’re not harder in the sense that the underlying concepts are impenetrable. Harder in the sense that the usual documentation workflow — define the endpoint, describe the parameters, show an example response — gets you maybe 60% of the way there. After that you’ll need a different approach.</p>
+<p>Here’s what makes it different.</p>
+<hr>
+<h2>The output isn’t deterministic</h2>
+<p>With a traditional REST API, if you send the same request twice, you get the same response. That predictability is what makes example responses so useful in documentation. A reader can look at your sample JSON and say, “okay, I know exactly what I’m getting.”</p>
+<p>With an AI API — whether it’s a language model, an image generator, or a speech-to-text service — the output varies. Sometimes significantly. Two identical requests to the same endpoint can return results that look completely different. How do you write an “Example Response” section for that?</p>
+<p>The answer — and what separates good AI API docs from poor ones — is documenting the <em>structure</em> of the response, not just a single instance of it. You need to explain the range of what’s possible, the factors that influence the output (temperature settings, system prompts, model version), and what “a good result” looks like versus an unexpected one. That’s a fundamentally different writing task than documenting a payments API.</p>
+<hr>
+<h2>The parameters change the behavior in non-obvious ways</h2>
+<p>Most API parameters are straightforward: pass <code>currency: &quot;USD&quot;</code> and you get USD. But AI API parameters interact with each other in ways that are genuinely complex to explain.</p>
+<p>Take <code>temperature</code> in a language model API. You can explain the technical definition — it controls the randomness of the output, higher values produce more varied responses — but that doesn’t tell a developer <em>when</em> to use 0.2 versus 0.8. For that, you need examples. Real, concrete, side-by-side examples that show what the output actually looks like at different settings.</p>
+<p>The same goes for system prompts, stop sequences, context window limits, and the relationship between <code>max_tokens</code> and response quality. Each of these requires more than a one-line description. They require explanatory prose that helps a developer build an accurate mental model — and that’s technical writing, not just parameter documentation.</p>
+<hr>
+<h2>The errors are probabilistic, not categorical</h2>
+<p>With a traditional API, error documentation is relatively contained. A <code>401</code> means the token is bad. A <code>404</code> means the resource doesn’t exist. A <code>422</code> means you sent malformed data. You can document these cleanly.</p>
+<p>AI APIs have all of those errors, plus a class of “errors” that aren’t HTTP errors at all: outputs that are technically valid responses but aren’t what the developer wanted. A hallucinated fact. A truncated response. A refusal. A response in the wrong language. A code sample that doesn’t compile.</p>
+<p>These aren’t failures you can handle with a try-catch block — they’re behavioral patterns that developers need to anticipate and build around. Documenting them means writing content that doesn’t fit neatly into a traditional error codes table. It might live in a “Known limitations” section, a “Best practices” guide, or inline callouts throughout the reference docs. Figuring out where it belongs requires the kind of information architecture judgment that separates a technical writer from a documentation template.</p>
+<hr>
+<h2>The audience is often two people at once</h2>
+<p>AI API documentation often has to serve two very different readers: the engineer who is wiring up the API call, and the product manager or ML practitioner who is deciding what parameters to use, how to craft prompts, and what quality thresholds to set.</p>
+<p>A pure reference doc serves the engineer. A pure conceptual guide serves the PM. But in practice, AI API docs need to do both — often on the same page — without alienating either reader.</p>
+<p>Threading that needle requires a clear information architecture and a writer who understands both audiences well. The documentation that fails to serve AI API users most often fails at this level — written for one reader, accidentally ignoring the other.</p>
+<hr>
+<h2>So what does good AI API documentation actually look like?</h2>
+<p>It looks like this:</p>
+<p><strong>Conceptual foundation first.</strong> Before any endpoint reference, readers need to understand how the model works at a high level — what it takes as input, what it produces, and what factors influence the output. A two-page “How it works” section saves ten support tickets.</p>
+<p><strong>Parameter documentation with behavioral examples.</strong> Not just type and description, but concrete before-and-after examples showing what changes when you adjust a parameter. Screenshots, sample outputs, even tables comparing outputs at different settings.</p>
+<p><strong>Honest limitations documentation.</strong> The best AI API docs don’t hide the product’s limitations — they document them clearly, with guidance on how to work around them. This builds developer trust far more than pretending the limitations don’t exist.</p>
+<p><strong>Prompt engineering guidance.</strong> For LLM APIs especially, how you craft the input matters enormously. The best doc sets include a prompt engineering guide that teaches developers to get better outputs — not as a workaround for poor documentation, but as a genuine part of the developer experience.</p>
+<p><strong>Version and model change logs.</strong> AI models get updated, and updates can change behavior in ways that break integrations. A detailed changelog that explains behavioral changes — not just “performance improvements” — is essential.</p>
+<hr>
+<h2>Why this matters for technical writers right now</h2>
+<p>After many years in technical writing, I find AI API documentation to be one of the most genuinely interesting documentation problems facing our field right now. The frameworks we’ve relied on for decades — the endpoint reference, the parameter table, the example response — are necessary but no longer sufficient.</p>
+<p>The writers who figure out how to document probabilistic systems, explain behavioral parameters, and serve dual audiences on the same page will be the ones companies are looking for as AI products continue to proliferate.</p>
+<p>If your team is building an AI product and struggling with the docs, I’d love to talk. The problems described here are solvable — they just require the right approach.</p>
+<hr>
+<ul>
+<li>Haletha Judkins is a technical writer specializing in API documentation for developer audiences. <a href="https://www.haletha.com/#contact">Get in touch</a>.*</li>
+</ul>
+
+
+</article>
+
+
+<!-- Previous / Next post navigation -->
+
+
+
+
+<nav class="post-nav" aria-label="Post navigation">
+
+  <div class="prev">
+    
+      <span class="nav-label">← Previous</span>
+      <a href="/blog/what-is-docs-as-code/">What Is Docs-as-Code — And Does Your Team Actually Need It?</a>
+    
+  </div>
+
+  <div class="next">
+    
+      <span class="nav-label">Next →</span>
+      <a href="/blog/welcome/">Welcome to the Words &amp; Tech Blog</a>
+    
+  </div>
+
+</nav>
+
+
+  </main>
+
+  <!-- Footer Section-->
+  <section class="footer">
+    <a href="/" class="logo">Haletha<span>Judkins</span></a>
+    <p>&copy;<span id="year"></span> Haletha Judkins | <a href="/blog/">Blog</a> | <a href="/privacy_policy.html">Privacy Policy</a></p>
+    <div class="socials">
+      <a href="https://twitter.com/halethajudkins">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/halethajudkins">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <a href="https://github.com/creativeleej">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+    </div>
+  </section>
+
+  <!-- cdnjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- ionicons cdn -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+  <!-- Local js File -->
+  <script src="/script.js"></script>
+
+  <!-- Web3Forms js file -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <!-- Year in footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
