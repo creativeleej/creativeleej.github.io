@@ -43,13 +43,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'       # caches node_modules for faster builds
 
       # Step 3: Install dependencies from package-lock.json
       # "npm ci" is safer than "npm install" for CI environments
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # Step 4: Build the Eleventy site
       # This runs the "build" script from your package.json
