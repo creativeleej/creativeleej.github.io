@@ -111,6 +111,7 @@ section {
 /* Home Section */
 .home {
   height: 400px;
+  padding-top: 8rem;
   width: 100%;
   position: relative;
   background:
