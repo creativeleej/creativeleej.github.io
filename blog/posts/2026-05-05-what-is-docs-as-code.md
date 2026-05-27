@@ -117,7 +117,7 @@ have different names depending on the company, but the pattern is the same
 everywhere.
 
 If you want an even lower-stakes entry point before tackling a full site: create 
-a free GitHub account, add a README.md to a new repository, and write something 
+a free GitHub account, add a `README.md` to a new repository, and write something 
 in Markdown. Make a change, commit it, and see how Git tracks the history. That 
 single experience — seeing your changes version-controlled — is the mental shift 
 that makes everything else click.
