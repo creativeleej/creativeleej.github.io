@@ -85,4 +85,4 @@ If your team is building an AI product and struggling with the docs, I'd love to
 
 ---
 
-* Haletha Judkins is a technical writer specializing in API documentation for developer audiences. [Get in touch](https://www.haletha.com/#contact).*
+Haletha Judkins is a technical writer specializing in API documentation for developer audiences. [Get in touch](https://www.haletha.com/#contact).*
