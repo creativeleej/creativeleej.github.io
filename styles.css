@@ -110,7 +110,7 @@ section {
 
 /* Home Section */
 .home {
-  height: 280px;
+  height: 500px;
   padding-top: 8rem;
   width: 100%;
   position: relative;
@@ -382,7 +382,7 @@ section {
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   .home {
-    height: 400px;
+    height: 500px;
     background-size: cover;
   }
 }
